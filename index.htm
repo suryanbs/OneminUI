@@ -1,0 +1,21 @@
+<html>
+    <header>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+			<link rel="stylesheet" type="text/css" href="mystyle.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    </header>
+    <body>    <h3>Welcome to ePrime</h3>
+    <div class="w3-sidebar w3-bar-block" style="width:25%"> 
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+      </div>
+      
+      <div  class="contentPage" ng-app="myApp" ng-controller="mainCtrl">
+      ... page content ...{{2+1}}
+	  <ng-include src="page.template"></ng-include>
+      </div>
+    </body>
+
+</html>
